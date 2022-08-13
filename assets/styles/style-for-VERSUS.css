@@ -1,0 +1,135 @@
+.container {
+  display: grid;
+  border: 2px solid;
+  width: 100%;
+  height: auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 540px 1fr 150px;
+}
+.header {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "tit1 ul"
+    "tit2 tit2";
+  justify-items: center;
+  grid-area: header;
+  /*Задаю фоновое изображение fone1*/
+  background-image: url(/assets/images/fone1.png);
+  /*Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях*/
+  background-position: center center;
+  /*Фон не повторяется*/
+  background-repeat: no-repeat;
+  /*Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
+  background-size: cover;
+  /*Цвет фона, который будет отображаться при загрузке фоновой картинки*/
+  background-color: #464646;
+}
+.tit1 {
+  position: relative;
+  right: 15%;
+  grid-area: tit1;
+  font-family: "Lato", "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+ul {
+  grid-area: ul;
+  list-style: none;
+}
+li {
+  display: inline;
+}
+.tit2 {
+  position: relative;
+  left: 50%;
+  bottom: 85%;
+  grid-area: tit2;
+  text-align: center;
+  font-family: "Lato", "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 53px;
+  color: #ffffff;
+}
+.main {
+  grid-area: main;
+  background-color: #222222;
+}
+.footer {
+  grid-area: footer;
+  background-color: #222222;
+}
+.example {
+  width: 350px;
+  height: 225px;
+  padding: 0.3%;
+}
+.menu {
+  font-family: "Lato", "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+  color: #00d6b4;
+  text-decoration: none;
+}
+button {
+  position: relative;
+  left: 92%;
+  bottom: 85%;
+  border: 2px solid #00d6b4;
+  font-family: "Lato", "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #00d6b4;
+  background-color: #22222222;
+}
+.tit3 {
+  position: relative;
+  text-align: center;
+  font-family: "Lato", "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.tit4 {
+  position: relative;
+  top: 25%;
+  font-family: "Lato", "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #c2c2c2;
+  text-align: center;
+}
+p {
+  position: relative;
+  top: 25%;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #999999;
+}
+.forexample {
+  position: relative;
+  left: 9%;
+}
